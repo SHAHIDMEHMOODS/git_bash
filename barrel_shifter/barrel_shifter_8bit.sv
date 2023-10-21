@@ -17,25 +17,3 @@ endcase
 end
 endmodule
 
-// module barrel_shifter_8bit(
-//     input logic [7:0] data,
-//     input logic [2:0] amt,
-//     output logic [7:0] out
-// );
-
-//     always_comb begin
-//        // out = 8'h0; 
-
-//         for (int i = 0; i < 8; i = i + 1) begin
-//             if (amt == i) begin
-                
-//                 if (i == 0)
-//                     out = data;
-//                 else if (i < 7)
-//                     out = {data[i-1:0], data[7:i]};
-//                 else 
-//                     out = {data[6:0], data[7]};
-//             end
-//         end
-//     end
-// endmodule
