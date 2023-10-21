@@ -1,9 +1,9 @@
-// Code your design here
 module barrel_shifter_8bit(
 input logic [7:0] data,
 input logic [2:0] amt,
 output logic [7:0] out );
 always_comb begin
+
 case (amt)
 3'o0: out = data;
 3'o1: out = {data[0], data[7:1]};
